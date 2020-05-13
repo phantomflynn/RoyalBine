@@ -10,5 +10,5 @@
 ### Production build
 
 1. `npm run build`
-2. `zip -r productBuild.zip dist/`
+2. `zip -r productionBuild.zip dist/`
 3. Upload and extract files within GoDaddy's `public_html` directory.
