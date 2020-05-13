@@ -1,0 +1,64 @@
+{
+  "name": "royal_bine_brewery",
+  "version": "0.0.2",
+  "private": true,
+  "scripts": {
+    "analyze": "webpack --config ./webpack/webpack.report.js",
+    "start": "webpack-dev-server --hot --config ./webpack/webpack.dev.js",
+    "build": "webpack --config ./webpack/webpack.prod.js",
+    "tslint-check": "tslint-config-prettier-check ./tslint.json",
+    "format-all": "prettier --write '{src,dev,@types}/**/*.{js,jsx,ts,tsx,scss,css,json,md}'"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,scss,css,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "sideEffects": [
+    "*.scss",
+    "*.css"
+  ],
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.9",
+    "@types/react-dom": "^16.9.2",
+    "autoprefixer": "^9.6.5",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "dotenv": "^8.2.0",
+    "file-loader": "^4.2.0",
+    "fork-ts-checker-webpack-plugin": "^1.5.1",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^3.0.9",
+    "inline-source-map": "^0.6.2",
+    "interpolate-html-plugin": "^3.0.0",
+    "lint-staged": "^9.4.2",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^1.18.2",
+    "react-helmet": "^5.2.1",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "ts-loader": "^6.2.0",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^4.1.0",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.2",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dashboard": "^3.2.0",
+    "webpack-dev-server": "^3.8.2",
+    "webpack-merge": "^4.2.2"
+  }
+}
