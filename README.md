@@ -7,7 +7,7 @@
 1. `npm i`
 2. `npm run start`
 
-### Product build
+### Production build
 
 1. `npm run build`
 2. `zip -r productBuild.zip dist/`
