@@ -1,0 +1,106 @@
+.primary-container {
+  font-family: "Saira Extra Condensed", sans-serif;
+  background-color: #151716;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .landing-page {
+    height: 60vh;
+    width: 100vw;
+    background-image: url("../images/royalBineLogo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #363d18;
+  }
+
+  .coming-soon {
+    color: white;
+    font-size: 52px;
+    height: 25vh;
+    width: 100vw;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-align: center;
+    // background-color: #151716;
+    background-color: #363d18;
+  }
+
+  .footer {
+    height: 15vh;
+    width: 100vw;
+    // background-color: #151716;
+    background-color: #363d18;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: normal;
+    font-family: "Open Sans", sans-serif;
+    span {
+      font-size: 18px;
+    }
+
+    a {
+      margin-left: 7px;
+      text-decoration: underline;
+      color: white;
+    }
+
+    h6 {
+      font-size: 18px;
+      margin-top: 15px;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .primary-container {
+    .coming-soon {
+      font-size: 48px;
+    }
+
+    .footer {
+      span {
+        font-size: 14px;
+      }
+
+      h6 {
+        margin-top: 7px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .primary-container {
+    .coming-soon {
+      font-size: 36px;
+    }
+  }
+}
+
+@media screen and (max-height: 580px) {
+  .primary-container {
+    .coming-soon {
+      font-size: 36px;
+    }
+    .footer {
+      span {
+        font-size: 12px;
+      }
+
+      h6 {
+        margin-top: 7px;
+        font-size: 12px;
+      }
+    }
+  }
+}
